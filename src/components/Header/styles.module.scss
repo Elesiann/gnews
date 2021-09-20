@@ -27,7 +27,7 @@
       transition: all 0.2s;
 
       & + a {
-          margin-left: 2rem;
+        margin-left: 2rem;
       }
 
       &:hover {
@@ -35,21 +35,26 @@
       }
 
       &.is__active {
-          color: var(--gray-100);
-          font-weight: bold;
+        color: var(--gray-100);
+        font-weight: bold;
       }
 
-      &.is__active::after{
-          content: '';
-          height: 3px;
-          border-radius: 3px 3px 0 0;
+      &.is__active::after {
+        content: "";
+        height: 3px;
+        border-radius: 3px 3px 0 0;
 
-          width: 100%;
-          position: absolute;
-          bottom: 1px;
-          left: 2px;
-          background: var(--red-500);
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 2px;
+        background: var(--red-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
+    text-align: center;
   }
 }
