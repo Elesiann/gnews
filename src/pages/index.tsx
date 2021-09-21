@@ -1,16 +1,27 @@
 import Head from "next/head";
 
+import styles from './home.module.scss'
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Início | gNews</title>
+        <title>Home | gNews</title>
       </Head>
 
-      <div>
-        <h1>Oieeeeeeeeeeeee</h1>
-        <h2>para de tirar o parenteses</h2>
-      </div>
+      <main className={styles.contentContainer}>
+        <section className={styles.hero}>
+          <span> 👏 Hey! Bem vindo! </span>
+          <h1>Novidades sobre o mundo do <span>React!</span></h1>
+          <p>
+            Acesse todas as publicações <br />
+            <span>Por apenas R$9,90</span>
+          </p>
+        </section>
+
+        <img src="/images/avatar.svg" alt="Coding" />
+
+      </main>
     </>
   );
 }
